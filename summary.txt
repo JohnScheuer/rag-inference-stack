@@ -1,0 +1,18 @@
+rag-inference-stack — Project Summary
+======================================
+
+Objective: Build a self-contained local RAG system with API access.
+Hardware: NVIDIA RTX 2070 8GB.
+
+Key Achievements:
+- Integrated PDF/TXT ingestion with overlapping chunking.
+- Implemented persistent vector storage via ChromaDB.
+- Benchmarked end-to-end latency (Median: 1820ms).
+- Developed FastAPI server with /query and /ingest endpoints.
+- Validated correctness via semantic retrieval of Speculative Decoding data.
+
+Tech Stack:
+- Embeddings: sentence-transformers (all-MiniLM-L6-v2)
+- LLM: Qwen2-0.5B-Instruct (FP16)
+- Database: ChromaDB (Local)
+- API: FastAPI + Uvicorn
